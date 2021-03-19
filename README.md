@@ -1,5 +1,5 @@
-Kabir Jain
-19030121045
+# Kabir Jain
+# 19030121045
 # Tetris_Typescript
 A fun tetris game made in typescript
 
