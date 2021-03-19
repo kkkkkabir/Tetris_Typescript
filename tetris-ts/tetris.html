@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name=" theme-color" content="#000">
+    <title>Tetris</title>
+    <style>
+       body {
+            margin: 0;
+            padding: 0;
+            background-color: #1d1135;
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container {
+            align-self: center;
+        }
+        .game-container {
+            border: #ffff00 4px solid;
+            box-shadow: #ffff00 0px 0px 50px;
+        }
+        #title{
+            margin: 0;
+            padding: 0;
+            font-size: 120px;
+            position: absolute;
+            left: 15px;
+            font-family: monospace;
+            color: white;
+            text-shadow: 2px 2px 10px skyblue;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">Tetris</h1>
+    <div class="container">
+        <div class="game-container">
+            <canvas id="game" width="520" height="640"></canvas>
+        </div>
+    </div>
+    <script src="./Game.js"></script>
+    <script>
+      const game = new Game('#game');
+      game.run();
+    </script>
+</body>
+</html>
